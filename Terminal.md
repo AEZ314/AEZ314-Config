@@ -50,7 +50,8 @@ wtf() {
   print "> tldr <cli command>: better man page"
   print "> j <journal entry>: simple journal"
   print "> tmux -s <name>: start persisted shell session"
-  print "> rg <search>: grep but much faster"
+  print "> rg <search>: faster grep"
+  print "> micro <file>: better nano"
   print
 }
 
@@ -77,6 +78,9 @@ jrnl
 
 # ripgrep: like grep but much faster
 rg
+
+# like nano but more convenient
+micro
 
 # Decouples shell sessions from terminal sessions
 tmux
