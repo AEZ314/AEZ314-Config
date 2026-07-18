@@ -10,11 +10,15 @@ Recommended terminal of choice: `Ghostty`
 
 ```
 command = /bin/zsh
+
 shell-integration-features = no-title
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
 window-subtitle = false
 clipboard-paste-protection = false
+
+shell-integration-features = ssh-terminfo
+
 background = 1e1e2e
 foreground = cdd6f4
 ```
@@ -37,9 +41,18 @@ precmd() {
 
 print
 print "Welcome, $USER."
-print "tldr > better man page"
-print "j > simple journal"
+print "> wtf: helpful commands"
 print
+
+wtf() {
+  print
+  print "> cmatrix: MATRIX"
+  print "> tldr <cli command>: better man page"
+  print "> j <journal entry>: simple journal"
+  print "> tmux -s <name>: start persisted shell session"
+  print "> rg <search>: grep but much faster"
+  print
+}
 
 alias j='jrnl'
 
@@ -65,4 +78,6 @@ jrnl
 # ripgrep: like grep but much faster
 rg
 
+# Decouples shell sessions from terminal sessions
+tmux
 ```
