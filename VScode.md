@@ -3,6 +3,7 @@
 # Extensions
 ```
 alefragnani.project-manager
+pomdtr.excalidraw-editor
 aaron-bond.better-comments
 1password.op-vscode
 anthropic.claude-code
